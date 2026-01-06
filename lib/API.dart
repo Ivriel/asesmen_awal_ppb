@@ -39,7 +39,8 @@ class _ApiState extends State<Api> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("User List"),
+        automaticallyImplyLeading: false,
+        title: const Text("Soal 7 - API"),
       ),
       body: isLoading 
       ? const Center(child: CircularProgressIndicator(),)

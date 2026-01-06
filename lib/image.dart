@@ -1,3 +1,4 @@
+import 'package:asesmen_awal/button.dart';
 import 'package:asesmen_awal/hello_world.dart';
 import 'package:flutter/material.dart';
 
@@ -7,6 +8,9 @@ class ImageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Soal 3 - Image'),
+      ),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
@@ -17,7 +21,26 @@ class ImageWidget extends StatelessWidget {
               SizedBox(height: 20),
               Text('Gambar Asset'),
               SizedBox(height: 20),
-            Image.asset('assets/gambar_asset.png')
+              Container(
+                margin: const EdgeInsets.all(16),
+                child: Image.asset('assets/gambar_asset.png'),
+              ),
+             
+                   ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => ButtonWidget()));
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)
+                      )
+                    ),
+                    child: const Text('Next',style: TextStyle(
+                      color: Colors.white,
+                      fontWeight:FontWeight.bold
+                    ),),
+                  ),
             ]
           ),
         ),
