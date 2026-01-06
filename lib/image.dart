@@ -1,5 +1,4 @@
 import 'package:asesmen_awal/button.dart';
-import 'package:asesmen_awal/hello_world.dart';
 import 'package:flutter/material.dart';
 
 class ImageWidget extends StatelessWidget {

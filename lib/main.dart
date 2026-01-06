@@ -1,8 +1,4 @@
-import 'package:asesmen_awal/API.dart';
-import 'package:asesmen_awal/button.dart';
 import 'package:asesmen_awal/hello_world.dart';
-import 'package:asesmen_awal/image.dart';
-import 'package:asesmen_awal/table.dart';
 import 'package:flutter/material.dart';
 
 void main() {

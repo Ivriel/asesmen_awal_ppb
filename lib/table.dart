@@ -45,12 +45,7 @@ class TableWidget extends StatelessWidget {
                     DataCell(Text('Jane')),
                     DataCell(Text('25')),
                     DataCell(Text('Female')),
-                  ]),
-                  DataRow(cells: [
-                    DataCell(Text('Bob')),
-                    DataCell(Text('30')),
-                    DataCell(Text('Male')),
-                  ]),
+                  ])
                 ],
               ),
             ),
